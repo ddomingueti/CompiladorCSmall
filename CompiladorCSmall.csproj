@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AnalisadorLexico\AnalisadorLexico.csproj" />
+    <ProjectReference Include="..\AnalisadorSintatico\AnalisadorSintatico.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Teste.c">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
